@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<link href="style.css"rel="stylesheet"type="text/css"/>
+<script>
+  $(document).ready(function(){
+ // var img = document.getElementById('cl');
+ // var a = img.getAttribute('src');
+ // var img_url ="url('"+a+"')";
+ // // $(".hh:nth-of-type(2)").css("background", img_url);
+ var test = jQuery(".hh img").attr('src');
+ var back = jQuery('.hh').css('background');
+jQuery(".hh").css('background' , 'url(' + test + ')');
+jQuery(".hh img").attr('src' , back);
+});
+</script>
+</head>
+<body>
+<div class="hh"></div>
+<div class="hh"><img src="images/image-2.png" id="cl"></div>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <html>
+    <head>
+      <script src="http://www.google.com/jsapi"></script>
+      <script>
+       $(document).ready(function(){
+$('.changesrc').attr('src', $('.changesrc').attr('src').replace('images', 'images/image-1.jpg'));
+});
+      </script>
+
+      <style>
+
+.changesrc {
+    background: hsla(0, 0%, 0%, 0) url("images/image-1.jpg") no-repeat fixed center center / 100% 100%;
+    height: 300px;
+}
+
+img {
+    height: 400px;
+    width: 100%;
+}
+      </style>
+    </head>
+    <body>
+      <div class="changesrc"></div>
+      <div class="changesrc"><img src="images/image-2.png"></div>
+    </body>
+</html>
+ 
+ -->
+
+
+
+
+
+
+<!-- <!DOCTYPE <html>
+<head>
+	<title>Mukesh Tamplate</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="jquery-1.12.3.min.JS"></script>
+	  <script type="text/javascript">
+ $(document).ready(function(){
+$('selector').css('backgroundImage','url(images/image-1.jpg)');
+
+     </script>
+</head>
+<body>
+      <div class="div"> 
+    </div>
+      <div class="div">
+       <img src="images/image-2.png"> 
+    </div>
+</body>
+</html>  -->

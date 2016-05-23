@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: hsl(350, 100%, 88%);
+}
+.wrapper {
+	margin: 0 auto;
+	width: 1000px;
+    max-width: 100%;
+}
+.wrapper > div {
+    display: inline-flex;
+    margin: 0 0 7px;
+    width: 32%;
+}
+.wrap {
+    border: 2px solid;
+    margin: 0;
+    width: 1000px !important;
+}
+.wrap > div {
+    float: left;
+    margin: 0 17px 1px 16px;
+    width: 31%;
+}
+img {
+    border-radius: 50%;
+    float: left;
+    height: 264px;
+    padding: 7px 0;
+    width: 100%;
+}
