@@ -1,0 +1,52 @@
+<!-- add class using id --> 
+<html>	
+<head>
+       <title>Button</title>
+       <style type="text/css">
+
+.new {
+	background-color: red;
+	height: 200px; 	
+}
+       </style>
+        
+   </head>
+   <body>
+   <div id="o" class="oldclass"><p>kk</p></div>
+   <script type="text/javascript">
+           o.className = "";  
+           o.className='new';
+       </script>
+   </body>
+   
+</html>
+<!-- add class using id --> 
+
+<!-- add class ussing class name -->
+<html>  
+<head>
+       <title>Button</title>
+       <style type="text/css">
+
+.test {
+  background-color: red;
+  height: 200px;  
+}
+.bunty {
+  background-color: red;
+  height: 200px;  
+}
+       </style>   
+   </head>
+   <body>
+   <div class="oldclass"><p>kk</p></div>
+   <div class="oldclass"><p>kkk</p></div>
+   <script type="text/javascript">
+      var x = document.getElementsByClassName("oldclass")[1];
+      x.className = 'bunty';
+      var y = document.getElementsByClassName('oldclass')[0];
+      y.className = 'test';
+    </script>
+   </body>
+</html>
+<!-- add class ussing class name end-->
