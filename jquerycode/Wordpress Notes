@@ -1,0 +1,32 @@
+// Custom Widgets For Dynamic Videos
+	echo '<div class="video-section">';
+	if ( is_active_sidebar('video-section')) {
+		dynamic_sidebar('video-section');
+	}
+	echo '</div>';
+  
+  
+  
+// Child theme functions  
+  <?php
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+function my_theme_enqueue_styles() {
+    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+}
+?>
+
+// style.css important thing in tamplate.
+/*
+Theme Name: Zerif Lite Child
+Theme URI: http://gai.co.in/
+Template: zerif-lite	
+Author: gaitechnologies private ltd 
+Author URI: http://gai.co.in/
+Description: Zerif Lite Child is a free one page WordPress theme. It's perfect for web agency business,corporate business,personal and parallax business portfolio, photography sites and freelancer.Is built on BootStrap with parallax support, is responsive, clean, modern, flat and minimal. Zerif Lite is ecommerce (WooCommerce) Compatible, WPML, RTL, Retina-Ready, SEO Friendly and with parallax, full screen image is one of the best business themes.
+Version: 1.1.0
+License: GNU General Public License version 1
+Text Domain: zerif-lite-child
+Tags: one-column, two-columns, right-sidebar,full-width-template,rtl-language-support,sticky-post,theme-options, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready, footer-widgets, portfolio, e-commerce, blog
+*/
+
+@import url("../zerif-lite/style.css");
